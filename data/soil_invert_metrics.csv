@@ -1,0 +1,646 @@
+,,,,,
+Metrics by Sample Table,,,,,
+Client Label,Sample Type,Species Richness (number of OTUs),Number of OTUs named at species level,Evolutionary Diversity,Site
+2023 C BP1 P1 S2,Client sample,5,0,0.95,Bedford Purlieus NNR
+2023 C BP1 P1 S3,Client sample,10,1,1.86,Bedford Purlieus NNR
+2023 C BP1 P1 S5,Client sample,13,0,1.69,Bedford Purlieus NNR
+2023 C BP1 P2 S2,Client sample,21,1,3.18,Bedford Purlieus NNR
+2023 C BP1 P2 S5,Client sample,3,1,0.47,Bedford Purlieus NNR
+2023 C BP1 P3 S1,Client sample,19,4,2.96,Bedford Purlieus NNR
+2023 C BP1 P3 S2,Client sample,23,10,3.71,Bedford Purlieus NNR
+2023 C BP1 P3 S3,Client sample,8,0,1.47,Bedford Purlieus NNR
+2023 C BP1 P3 S4,Client sample,16,1,2.69,Bedford Purlieus NNR
+2023 C BP1 P3 S5,Client sample,15,3,2.56,Bedford Purlieus NNR
+2023 C IG P1 S1,Client sample,11,1,1.47,Ingoldsby
+2023 C IG P1 S2,Client sample,6,1,1.09,Ingoldsby
+2023 C IG P1 S3,Client sample,8,1,1.14,Ingoldsby
+2023 C IG P1 S4,Client sample,18,3,2.92,Ingoldsby
+2023 C IG P1 S5,Client sample,20,4,2.49,Ingoldsby
+2023 C IG P2 S1,Client sample,7,0,1.28,Ingoldsby
+2023 C IG P2 S2,Client sample,10,1,1.32,Ingoldsby
+2023 C IG P2 S3,Client sample,8,2,1.16,Ingoldsby
+2023 C IG P2 S4,Client sample,11,3,1.55,Ingoldsby
+2023 C IG P2 S5,Client sample,5,0,0.83,Ingoldsby
+2023 C IG P3 S1,Client sample,8,1,1.32,Ingoldsby
+2023 C IG P3 S2,Client sample,6,2,0.65,Ingoldsby
+2023 C IG P3 S3,Client sample,19,2,3.07,Ingoldsby
+2023 C IG P3 S4,Client sample,9,0,1.4,Ingoldsby
+2023 C IG P3 S5,Client sample,7,1,1.21,Ingoldsby
+2023 E CC1 P1 S1,Client sample,16,0,2.27,Cranwich Camp
+2023 E CC1 P1 S2,Client sample,12,1,1.64,Cranwich Camp
+2023 E CC1 P1 S3,Client sample,8,3,1.5,Cranwich Camp
+2023 E CC1 P1 S4,Client sample,26,2,3.54,Cranwich Camp
+2023 E CC1 P1 S5,Client sample,5,0,1,Cranwich Camp
+2023 E CC1 P2 S1,Client sample,8,1,1.52,Cranwich Camp
+2023 E CC1 P2 S2,Client sample,20,2,2.88,Cranwich Camp
+2023 E CC1 P2 S3,Client sample,13,0,2.05,Cranwich Camp
+2023 E CC1 P2 S4,Client sample,12,1,2.02,Cranwich Camp
+2023 E CC1 P2 S5,Client sample,11,0,1.36,Cranwich Camp
+2023 E CC1 P3 S1,Client sample,15,1,2.06,Cranwich Camp
+2023 E CC1 P3 S2,Client sample,11,1,1.79,Cranwich Camp
+2023 E CC1 P3 S3,Client sample,29,2,3.75,Cranwich Camp
+2023 E CC1 P3 S4,Client sample,11,2,1.76,Cranwich Camp
+2023 E CC1 P3 S5,Client sample,7,1,1.01,Cranwich Camp
+2023 E DH1 P1 S1,Client sample,11,3,1.92,Dunwich
+2023 E DH1 P1 S2,Client sample,10,1,1.51,Dunwich
+2023 E DH1 P1 S3,Client sample,12,4,1.74,Dunwich
+2023 E DH1 P1 S4,Client sample,15,2,2.53,Dunwich
+2023 E DH1 P1 S5,Client sample,14,4,2.37,Dunwich
+2023 E DH1 P10 S1,Client sample,18,3,2.39,Dunwich
+2023 E DH1 P10 S2,Client sample,14,7,2.29,Dunwich
+2023 E DH1 P10 S3,Client sample,12,4,2.08,Dunwich
+2023 E DH1 P10 S4,Client sample,13,5,2.21,Dunwich
+2023 E DH1 P10 S5,Client sample,17,3,2.66,Dunwich
+2023 E DH1 P2 S1,Client sample,21,5,3.15,Dunwich
+2023 E DH1 P2 S2,Client sample,16,3,2.42,Dunwich
+2023 E DH1 P2 S3,Client sample,15,4,2.38,Dunwich
+2023 E DH1 P2 S4,Client sample,24,5,3.14,Dunwich
+2023 E DH1 P2 S5,Client sample,13,3,1.98,Dunwich
+2023 E DH1 P3 S1,Client sample,14,3,2.2,Dunwich
+2023 E DH1 P3 S2,Client sample,11,1,1.7,Dunwich
+2023 E DH1 P3 S3,Client sample,17,6,2.52,Dunwich
+2023 E DH1 P3 S4,Client sample,7,0,1.22,Dunwich
+2023 E DH1 P3 S5,Client sample,15,4,2.47,Dunwich
+2023 E DH1 P4 S1,Client sample,12,3,2.05,Dunwich
+2023 E DH1 P4 S2,Client sample,13,2,2.31,Dunwich
+2023 E DH1 P4 S3,Client sample,13,3,2.07,Dunwich
+2023 E DH1 P4 S4,Client sample,13,3,2.06,Dunwich
+2023 E DH1 P4 S5,Client sample,11,4,1.81,Dunwich
+2023 E DH1 P5 S1,Client sample,15,4,2.32,Dunwich
+2023 E DH1 P5 S2,Client sample,16,2,2.46,Dunwich
+2023 E DH1 P5 S3,Client sample,9,2,1.56,Dunwich
+2023 E DH1 P5 S4,Client sample,11,5,1.75,Dunwich
+2023 E DH1 P5 S5,Client sample,13,5,2.3,Dunwich
+2023 E DH1 P6 S1,Client sample,18,4,2.94,Dunwich
+2023 E DH1 P6 S2,Client sample,20,7,2.76,Dunwich
+2023 E DH1 P6 S3,Client sample,15,5,2.47,Dunwich
+2023 E DH1 P6 S4,Client sample,13,6,2.22,Dunwich
+2023 E DH1 P6 S5,Client sample,5,2,1.05,Dunwich
+2023 E DH1 P7 S1,Client sample,13,3,2.38,Dunwich
+2023 E DH1 P7 S2,Client sample,9,1,1.56,Dunwich
+2023 E DH1 P7 S3,Client sample,17,5,2.73,Dunwich
+2023 E DH1 P7 S4,Client sample,16,3,2.85,Dunwich
+2023 E DH1 P7 S5,Client sample,12,2,1.92,Dunwich
+2023 E DH1 P8 S1,Client sample,19,7,3.02,Dunwich
+2023 E DH1 P8 S2,Client sample,14,0,2.27,Dunwich
+2023 E DH1 P8 S3,Client sample,11,4,1.95,Dunwich
+2023 E DH1 P8 S4,Client sample,28,7,4.51,Dunwich
+2023 E DH1 P8 S5,Client sample,14,2,2.21,Dunwich
+2023 E DH1 P9 S1,Client sample,8,1,1.44,Dunwich
+2023 E DH1 P9 S2,Client sample,4,0,0.84,Dunwich
+2023 E DH1 P9 S3,Client sample,0,0,NA,Dunwich
+2023 E DH1 P9 S4,Client sample,6,1,1.1,Dunwich
+2023 E DH1 P9 S5,Client sample,2,0,0.4,Dunwich
+2023 E FO1 P1 S1,Client sample,17,4,2.64,Thetford Future Open
+2023 E FO1 P1 S2,Client sample,15,1,2.55,Thetford Future Open
+2023 E FO1 P1 S3,Client sample,14,1,2.22,Thetford Future Open
+2023 E FO1 P1 S4,Client sample,26,1,3.44,Thetford Future Open
+2023 E FO1 P1 S5,Client sample,19,0,2.74,Thetford Future Open
+2023 E FO1 P2 S1,Client sample,12,2,2.1,Thetford Future Open
+2023 E FO1 P2 S2,Client sample,12,1,2.06,Thetford Future Open
+2023 E FO1 P2 S3,Client sample,14,4,2.32,Thetford Future Open
+2023 E FO1 P2 S4,Client sample,7,1,1.5,Thetford Future Open
+2023 E FO1 P2 S5,Client sample,15,2,2.54,Thetford Future Open
+2023 E FO1 P3 S1,Client sample,10,1,1.66,Thetford Future Open
+2023 E FO1 P3 S2,Client sample,16,2,2.56,Thetford Future Open
+2023 E FO1 P3 S3,Client sample,12,3,2.05,Thetford Future Open
+2023 E FO1 P3 S4,Client sample,22,2,3.33,Thetford Future Open
+2023 E FO1 P3 S5,Client sample,19,2,2.95,Thetford Future Open
+2023 E HF1 P1 S1,Client sample,6,1,1.19,Hole Farm
+2023 E HF1 P1 S2,Client sample,17,2,2.44,Hole Farm
+2023 E HF1 P1 S3,Client sample,14,0,1.99,Hole Farm
+2023 E HF1 P1 S4,Client sample,15,3,2,Hole Farm
+2023 E HF1 P1 S5,Client sample,13,0,1.78,Hole Farm
+2023 E HF1 P2 S1,Client sample,9,1,1.27,Hole Farm
+2023 E HF1 P2 S2,Client sample,5,0,0.94,Hole Farm
+2023 E HF1 P2 S3,Client sample,8,0,1.42,Hole Farm
+2023 E HF1 P2 S4,Client sample,11,1,1.53,Hole Farm
+2023 E HF1 P2 S5,Client sample,17,2,2.49,Hole Farm
+2023 E HF1 P3 S1,Client sample,12,1,2.03,Hole Farm
+2023 E HF1 P3 S2,Client sample,10,0,1.63,Hole Farm
+2023 E HF1 P3 S3,Client sample,10,3,1.3,Hole Farm
+2023 E HF1 P3 S4,Client sample,6,0,0.93,Hole Farm
+2023 E HF1 P3 S5,Client sample,11,1,1.67,Hole Farm
+2023 E HF1 P4 S1,Client sample,11,2,1.79,Hole Farm
+2023 E HF1 P4 S2,Client sample,7,2,1.3,Hole Farm
+2023 E HF1 P4 S3,Client sample,10,1,1.59,Hole Farm
+2023 E HF1 P4 S4,Client sample,11,1,1.81,Hole Farm
+2023 E HF1 P4 S5,Client sample,8,1,1.26,Hole Farm
+2023 E HF1 P5 S1,Client sample,12,1,1.95,Hole Farm
+2023 E HF1 P5 S2,Client sample,7,0,0.87,Hole Farm
+2023 E HF1 P5 S3,Client sample,9,1,1.57,Hole Farm
+2023 E HF1 P5 S4,Client sample,17,1,2.01,Hole Farm
+2023 E HF1 P5 S5,Client sample,13,1,2.25,Hole Farm
+2023 E HF1 P6 S1,Client sample,14,1,1.97,Hole Farm
+2023 E HF1 P6 S2,Client sample,15,1,1.95,Hole Farm
+2023 E HF1 P6 S3,Client sample,12,0,1.74,Hole Farm
+2023 E HF1 P6 S4,Client sample,10,1,1.55,Hole Farm
+2023 E HF1 P6 S5,Client sample,13,4,1.82,Hole Farm
+2023 E HF1 P7 S1,Client sample,12,2,1.67,Hole Farm
+2023 E HF1 P7 S2,Client sample,15,1,2,Hole Farm
+2023 E HF1 P7 S3,Client sample,11,1,1.71,Hole Farm
+2023 E HF1 P7 S4,Client sample,12,1,2.1,Hole Farm
+2023 E HF1 P7 S5,Client sample,10,0,1.8,Hole Farm
+2023 E PF1 P1 S1,Client sample,16,2,2.64,Pleasant Farm
+2023 E PF1 P1 S2,Client sample,18,1,2.31,Pleasant Farm
+2023 E PF1 P1 S3,Client sample,8,0,1.45,Pleasant Farm
+2023 E PF1 P1 S4,Client sample,12,0,1.9,Pleasant Farm
+2023 E PF1 P1 S5,Client sample,10,0,1.54,Pleasant Farm
+2023 E PF1 P2 S1,Client sample,6,0,0.99,Pleasant Farm
+2023 E PF1 P2 S2,Client sample,14,1,2.32,Pleasant Farm
+2023 E PF1 P2 S3,Client sample,21,3,2.77,Pleasant Farm
+2023 E PF1 P2 S4,Client sample,16,2,2.56,Pleasant Farm
+2023 E PF1 P2 S5,Client sample,15,1,2.19,Pleasant Farm
+2023 E PF1 P3 S1,Client sample,12,1,2.41,Pleasant Farm
+2023 E PF1 P3 S2,Client sample,10,1,1.67,Pleasant Farm
+2023 E PF1 P3 S3,Client sample,13,3,2.18,Pleasant Farm
+2023 E PF1 P3 S4,Client sample,11,0,1.67,Pleasant Farm
+2023 E PF1 P3 S5,Client sample,14,0,2.05,Pleasant Farm
+2023 E PF1 P4 S1,Client sample,13,1,2.26,Pleasant Farm
+2023 E PF1 P4 S2,Client sample,19,3,2.61,Pleasant Farm
+2023 E PF1 P4 S3,Client sample,14,3,2.33,Pleasant Farm
+2023 E PF1 P4 S4,Client sample,5,0,1.08,Pleasant Farm
+2023 E PF1 P4 S5,Client sample,15,1,2.25,Pleasant Farm
+2023 E PF1 P5 S1,Client sample,16,1,2.31,Pleasant Farm
+2023 E PF1 P5 S2,Client sample,11,0,1.94,Pleasant Farm
+2023 E PF1 P5 S3,Client sample,15,1,2.32,Pleasant Farm
+2023 E PF1 P5 S4,Client sample,13,2,1.7,Pleasant Farm
+2023 E PF1 P5 S5,Client sample,15,1,2.04,Pleasant Farm
+2023 E PF1 P6 S1,Client sample,16,0,2.29,Pleasant Farm
+2023 E PF1 P6 S2,Client sample,17,0,2.1,Pleasant Farm
+2023 E PF1 P6 S3,Client sample,14,1,1.99,Pleasant Farm
+2023 E PF1 P6 S4,Client sample,14,0,2.23,Pleasant Farm
+2023 E PF1 P6 S5,Client sample,17,1,2.19,Pleasant Farm
+2023 E SS1 P1 S1,Client sample,7,2,1.27,Shifting Sands
+2023 E SS1 P1 S2,Client sample,7,0,1.41,Shifting Sands
+2023 E SS1 P1 S3,Client sample,11,0,2.03,Shifting Sands
+2023 E SS1 P1 S4,Client sample,15,0,1.92,Shifting Sands
+2023 E SS1 P1 S5,Client sample,20,2,2.63,Shifting Sands
+2023 E SS1 P2 S1,Client sample,13,0,1.71,Shifting Sands
+2023 E SS1 P2 S2,Client sample,20,1,2.63,Shifting Sands
+2023 E SS1 P2 S3,Client sample,9,0,1.43,Shifting Sands
+2023 E SS1 P2 S4,Client sample,4,1,0.83,Shifting Sands
+2023 E SS1 P2 S5,Client sample,9,0,1.3,Shifting Sands
+2023 E SS1 P3 S1,Client sample,17,2,2.58,Shifting Sands
+2023 E SS1 P3 S2,Client sample,16,2,2.45,Shifting Sands
+2023 E SS1 P3 S3,Client sample,10,0,1.51,Shifting Sands
+2023 E SS1 P3 S4,Client sample,16,0,2.37,Shifting Sands
+2023 E SS1 P3 S5,Client sample,13,0,2.11,Shifting Sands
+2023 E WW P1 S1,Client sample,11,1,1.65,Wing
+2023 E WW P1 S2,Client sample,12,4,1.64,Wing
+2023 E WW P1 S3,Client sample,4,1,0.76,Wing
+2023 E WW P1 S4,Client sample,12,3,1.8,Wing
+2023 E WW P1 S5,Client sample,9,2,1.63,Wing
+2023 E WW P2 S1,Client sample,9,1,1.46,Wing
+2023 E WW P2 S2,Client sample,9,2,1.55,Wing
+2023 E WW P2 S3,Client sample,6,0,1.02,Wing
+2023 E WW P2 S4,Client sample,13,0,2.01,Wing
+2023 E WW P2 S5,Client sample,15,2,2.19,Wing
+2023 E WW P3 S1,Client sample,5,0,1.12,Wing
+2023 E WW P3 S2,Client sample,11,2,1.59,Wing
+2023 E WW P3 S3,Client sample,5,0,0.96,Wing
+2023 E WW P3 S4,Client sample,12,2,1.89,Wing
+2023 E WW P3 S5,Client sample,5,2,0.96,Wing
+2023 E WW P4 S1,Client sample,10,3,1.68,Wing
+2023 E WW P4 S2,Client sample,10,2,2.02,Wing
+2023 E WW P4 S3,Client sample,14,3,2.14,Wing
+2023 E WW P4 S4,Client sample,8,2,1.77,Wing
+2023 E WW P4 S5,Client sample,5,1,1.16,Wing
+2023 N KE P1 S1,Client sample,23,3,3.41,Kielder
+2023 N KE P1 S2,Client sample,12,2,2.06,Kielder
+2023 N KE P1 S3,Client sample,23,5,3.05,Kielder
+2023 N KE P1 S4,Client sample,20,2,3.27,Kielder
+2023 N KE P1 S5,Client sample,11,2,1.71,Kielder
+2023 N KE P10 S1,Client sample,9,5,1.71,Kielder
+2023 N KE P10 S2,Client sample,7,1,1.19,Kielder
+2023 N KE P10 S3,Client sample,10,4,1.61,Kielder
+2023 N KE P10 S4,Client sample,6,2,1.14,Kielder
+2023 N KE P10 S5,Client sample,9,3,1.75,Kielder
+2023 N KE P2 S1,Client sample,14,0,2.04,Kielder
+2023 N KE P2 S2,Client sample,11,0,1.27,Kielder
+2023 N KE P2 S3,Client sample,13,2,1.9,Kielder
+2023 N KE P2 S4,Client sample,16,2,2.17,Kielder
+2023 N KE P2 S5,Client sample,21,2,2.84,Kielder
+2023 N KE P3 S1,Client sample,9,6,1.16,Kielder
+2023 N KE P3 S2,Client sample,16,5,2.51,Kielder
+2023 N KE P3 S3,Client sample,19,6,2.77,Kielder
+2023 N KE P3 S4,Client sample,14,7,2.2,Kielder
+2023 N KE P3 S5,Client sample,21,5,2.93,Kielder
+2023 N KE P4 S1,Client sample,9,4,1.52,Kielder
+2023 N KE P4 S2,Client sample,7,2,0.96,Kielder
+2023 N KE P4 S3,Client sample,21,11,2.99,Kielder
+2023 N KE P4 S4,Client sample,27,10,3.95,Kielder
+2023 N KE P4 S5,Client sample,28,9,4.41,Kielder
+2023 N KE P5 S1,Client sample,14,4,2.3,Kielder
+2023 N KE P5 S2,Client sample,22,8,2.78,Kielder
+2023 N KE P5 S4,Client sample,6,2,1.1,Kielder
+2023 N KE P5 S5,Client sample,13,3,1.95,Kielder
+2023 N KE P6 S1,Client sample,14,7,2.1,Kielder
+2023 N KE P6 S2,Client sample,11,4,2.09,Kielder
+2023 N KE P6 S3,Client sample,6,2,1.14,Kielder
+2023 N KE P6 S4,Client sample,12,4,2.12,Kielder
+2023 N KE P6 S5,Client sample,6,2,1.04,Kielder
+2023 N KE P7 S1,Client sample,8,3,1.14,Kielder
+2023 N KE P7 S2,Client sample,13,6,2.02,Kielder
+2023 N KE P7 S3,Client sample,12,4,1.92,Kielder
+2023 N KE P7 S4,Client sample,9,2,1.94,Kielder
+2023 N KE P7 S5,Client sample,8,4,1.36,Kielder
+2023 N KE P8 S1,Client sample,9,2,1.62,Kielder
+2023 N KE P8 S2,Client sample,8,1,1.27,Kielder
+2023 N KE P8 S3,Client sample,10,3,1.69,Kielder
+2023 N KE P8 S4,Client sample,16,6,2.25,Kielder
+2023 N KE P8 S5,Client sample,12,4,1.77,Kielder
+2023 N KE P9 S1,Client sample,3,2,0.26,Kielder
+2023 N KE P9 S2,Client sample,15,2,2.48,Kielder
+2023 N KE P9 S3,Client sample,13,3,2.02,Kielder
+2023 N KE P9 S4,Client sample,18,5,2.91,Kielder
+2023 N KE P9 S5,Client sample,25,6,3.23,Kielder
+2023 N WE1 P1 S1,Client sample,10,4,1.77,Ennerdale
+2023 N WE1 P1 S2,Client sample,13,7,1.91,Ennerdale
+2023 N WE1 P1 S3,Client sample,9,4,1.4,Ennerdale
+2023 N WE1 P1 S4,Client sample,16,1,2.4,Ennerdale
+2023 N WE1 P1 S5,Client sample,11,3,1.6,Ennerdale
+2023 N WE1 P10 S1,Client sample,12,5,1.49,Ennerdale
+2023 N WE1 P10 S2,Client sample,13,7,1.8,Ennerdale
+2023 N WE1 P10 S3,Client sample,17,4,2.48,Ennerdale
+2023 N WE1 P10 S5,Client sample,7,3,1.18,Ennerdale
+2023 N WE1 P2 S1,Client sample,20,9,2.97,Ennerdale
+2023 N WE1 P2 S2,Client sample,14,6,2.43,Ennerdale
+2023 N WE1 P2 S3,Client sample,7,3,1.15,Ennerdale
+2023 N WE1 P2 S4,Client sample,11,7,2.12,Ennerdale
+2023 N WE1 P2 S5,Client sample,13,4,2.19,Ennerdale
+2023 N WE1 P3 S1,Client sample,6,1,0.81,Ennerdale
+2023 N WE1 P3 S2,Client sample,10,4,1.8,Ennerdale
+2023 N WE1 P3 S3,Client sample,4,2,0.6,Ennerdale
+2023 N WE1 P3 S4,Client sample,13,3,2.79,Ennerdale
+2023 N WE1 P3 S5,Client sample,23,4,3.91,Ennerdale
+2023 N WE1 P4 S1,Client sample,13,7,2.21,Ennerdale
+2023 N WE1 P4 S2,Client sample,8,4,1.18,Ennerdale
+2023 N WE1 P4 S3,Client sample,16,6,2.5,Ennerdale
+2023 N WE1 P4 S5,Client sample,18,7,2.86,Ennerdale
+2023 N WE1 P5 S2,Client sample,9,4,1.41,Ennerdale
+2023 N WE1 P5 S3,Client sample,10,2,1.75,Ennerdale
+2023 N WE1 P5 S4,Client sample,12,5,1.99,Ennerdale
+2023 N WE1 P6 S1,Client sample,13,5,1.95,Ennerdale
+2023 N WE1 P6 S2,Client sample,5,1,0.69,Ennerdale
+2023 N WE1 P6 S3,Client sample,14,4,2.22,Ennerdale
+2023 N WE1 P6 S4,Client sample,5,2,0.52,Ennerdale
+2023 N WE1 P6 S5,Client sample,7,2,0.87,Ennerdale
+2023 N WE1 P7 S1,Client sample,17,7,2.48,Ennerdale
+2023 N WE1 P7 S2,Client sample,10,3,1.65,Ennerdale
+2023 N WE1 P7 S3,Client sample,8,2,1.03,Ennerdale
+2023 N WE1 P7 S4,Client sample,8,2,1.45,Ennerdale
+2023 N WE1 P7 S5,Client sample,10,1,1.75,Ennerdale
+2023 N WE1 P8 S1,Client sample,8,4,1.03,Ennerdale
+2023 N WE1 P8 S2,Client sample,8,3,1.27,Ennerdale
+2023 N WE1 P8 S3,Client sample,7,1,1.06,Ennerdale
+2023 N WE1 P8 S4,Client sample,6,4,1.06,Ennerdale
+2023 N WE1 P8 S5,Client sample,6,3,0.93,Ennerdale
+2023 N WE1 P9 S1,Client sample,6,3,0.93,Ennerdale
+2023 N WE1 P9 S2,Client sample,5,4,0.67,Ennerdale
+2023 N WE1 P9 S3,Client sample,18,5,2.9,Ennerdale
+2023 N WE1 P9 S5,Client sample,9,3,1.38,Ennerdale
+2023 N WW CB 1,Client sample,6,0,1.21,Kielder Wildwood
+2023 N WW CB 2,Client sample,12,4,2,Kielder Wildwood
+2023 N WW CB 3,Client sample,10,2,1.61,Kielder Wildwood
+2023 N WW CB 4,Client sample,9,0,1.75,Kielder Wildwood
+2023 N WW CB 5,Client sample,5,1,0.95,Kielder Wildwood
+2023 N WW OS 1,Client sample,7,3,1.11,Kielder Wildwood
+2023 N WW OS 2,Client sample,10,5,1.72,Kielder Wildwood
+2023 N WW OS 3,Client sample,8,5,1.32,Kielder Wildwood
+2023 N WW OS 4,Client sample,3,0,0.58,Kielder Wildwood
+2023 N WW OS 5,Client sample,7,1,1.16,Kielder Wildwood
+2023 N WW SP 1,Client sample,4,2,0.79,Kielder Wildwood
+2023 N WW SP 2,Client sample,2,1,0.26,Kielder Wildwood
+2023 N WW SP 3,Client sample,1,0,NA,Kielder Wildwood
+2023 N WW SP 4,Client sample,5,1,0.88,Kielder Wildwood
+2023 N WW SP 5,Client sample,3,2,0.49,Kielder Wildwood
+2023 N WW W11 1,Client sample,7,1,1.28,Kielder Wildwood
+2023 N WW W11 2,Client sample,17,9,2.53,Kielder Wildwood
+2023 N WW W11 3,Client sample,6,1,1.02,Kielder Wildwood
+2023 N WW W11 4,Client sample,5,2,0.72,Kielder Wildwood
+2023 N WW W11 5,Client sample,9,2,1.47,Kielder Wildwood
+2023 N WW W17 1,Client sample,5,0,0.94,Kielder Wildwood
+2023 N WW W17 2,Client sample,16,6,2.37,Kielder Wildwood
+2023 N WW W17 3,Client sample,9,3,1.35,Kielder Wildwood
+2023 N WW W17 4,Client sample,9,2,1.7,Kielder Wildwood
+2023 N WW W17 5,Client sample,13,3,2.11,Kielder Wildwood
+2023 N WW W18 1,Client sample,16,5,2.43,Kielder Wildwood
+2023 N WW W18 2,Client sample,12,1,1.97,Kielder Wildwood
+2023 N WW W18 3,Client sample,5,0,1.07,Kielder Wildwood
+2023 N WW W18 4,Client sample,13,1,2.2,Kielder Wildwood
+2023 N WW W18 5,Client sample,10,3,1.77,Kielder Wildwood
+2023 N WW W4 1,Client sample,7,1,1.4,Kielder Wildwood
+2023 N WW W4 2,Client sample,9,4,1.55,Kielder Wildwood
+2023 N WW W4 3,Client sample,14,5,2.51,Kielder Wildwood
+2023 N WW W4 4,Client sample,4,1,0.6,Kielder Wildwood
+2023 N WW W4 5,Client sample,9,2,1.36,Kielder Wildwood
+2023 N WW W7 1,Client sample,5,2,0.94,Kielder Wildwood
+2023 N WW W7 2,Client sample,1,0,NA,Kielder Wildwood
+2023 N WW W7 3,Client sample,11,2,1.71,Kielder Wildwood
+2023 N WW W7 4,Client sample,15,4,2.32,Kielder Wildwood
+2023 N WW W7 5,Client sample,12,4,2.09,Kielder Wildwood
+2023 N WW WC 1,Client sample,6,1,1.08,Kielder Wildwood
+2023 N WW WC 2,Client sample,12,2,1.98,Kielder Wildwood
+2023 N WW WC 3,Client sample,8,2,1.03,Kielder Wildwood
+2023 N WW WC 5,Client sample,15,5,2.3,Kielder Wildwood
+2023 S NF P1 S1 M,Client sample,21,4,2.97,New Forest
+2023 S NF P1 S2 M,Client sample,26,7,3.61,New Forest
+2023 S NF P1 S3 M,Client sample,21,5,2.9,New Forest
+2023 S NF P1 S4 M,Client sample,12,3,1.86,New Forest
+2023 S NF P1 S5 M,Client sample,20,4,2.97,New Forest
+2023 S NF P2 S1 D,Client sample,16,3,2.48,New Forest
+2023 S NF P2 S2 D,Client sample,13,1,1.94,New Forest
+2023 S NF P2 S3 D,Client sample,19,3,2.85,New Forest
+2023 S NF P2 S4 D,Client sample,14,2,2.15,New Forest
+2023 S NF P2 S5 D,Client sample,12,2,1.72,New Forest
+2023 S NF P3 S1 T,Client sample,22,4,3.07,New Forest
+2023 S NF P3 S2 T,Client sample,17,4,2.64,New Forest
+2023 S NF P3 S3 T,Client sample,14,4,2.32,New Forest
+2023 S NF P3 S4 T,Client sample,12,4,2.12,New Forest
+2023 S NF P3 S5 T,Client sample,10,2,1.71,New Forest
+2023 S TW1 P1 S1,Client sample,24,5,3.5,Chiddingfold
+2023 S TW1 P1 S2,Client sample,25,5,4.02,Chiddingfold
+2023 S TW1 P1 S3,Client sample,6,2,0.54,Chiddingfold
+2023 S TW1 P1 S4,Client sample,11,1,2.04,Chiddingfold
+2023 S TW1 P1 S5,Client sample,26,5,3.59,Chiddingfold
+2023 S TW1 P2 S1,Client sample,22,8,3.24,Chiddingfold
+2023 S TW1 P2 S2,Client sample,13,3,2.05,Chiddingfold
+2023 S TW1 P2 S3,Client sample,16,7,2.28,Chiddingfold
+2023 S TW1 P2 S4,Client sample,27,5,3.7,Chiddingfold
+2023 S TW1 P2 S5,Client sample,8,1,1.39,Chiddingfold
+2023 S TW2 P3 S1,Client sample,27,6,4,Chiddingfold
+2023 S TW2 P3 S2,Client sample,19,5,2.68,Chiddingfold
+2023 S TW2 P3 S3,Client sample,35,11,4.04,Chiddingfold
+2023 S TW2 P3 S4,Client sample,23,6,3.07,Chiddingfold
+2023 S TW2 P3 S5,Client sample,22,10,3.45,Chiddingfold
+2023 S TW2 P4 S1,Client sample,20,5,3.31,Chiddingfold
+2023 S TW2 P4 S2,Client sample,16,3,2.64,Chiddingfold
+2023 S TW2 P4 S3,Client sample,9,2,1.48,Chiddingfold
+2023 S TW2 P4 S4,Client sample,12,2,1.96,Chiddingfold
+2023 S TW2 P4 S5,Client sample,19,4,3.21,Chiddingfold
+2023 S TW2 P5 S1,Client sample,15,4,2.49,Chiddingfold
+2023 S TW2 P5 S2,Client sample,14,1,1.79,Chiddingfold
+2023 S TW2 P5 S3,Client sample,17,6,2.55,Chiddingfold
+2023 S TW2 P5 S4,Client sample,10,3,1.53,Chiddingfold
+2023 S TW2 P5 S5,Client sample,17,4,2.04,Chiddingfold
+2023 S TW2 P6 S1,Client sample,26,8,4.22,Chiddingfold
+2023 S TW2 P6 S2,Client sample,12,3,2.05,Chiddingfold
+2023 S TW2 P6 S3,Client sample,18,5,2.63,Chiddingfold
+2023 S TW2 P6 S4,Client sample,18,3,2.87,Chiddingfold
+2023 S TW2 P6 S5,Client sample,11,0,1.87,Chiddingfold
+2023 S WH P1 S1,Client sample,18,4,2.94,Wareham
+2023 S WH P1 S2,Client sample,8,1,1.36,Wareham
+2023 S WH P1 S3,Client sample,14,3,2,Wareham
+2023 S WH P1 S4,Client sample,16,5,2.36,Wareham
+2023 S WH P1 S5,Client sample,14,2,2.33,Wareham
+2023 S WH P2 S1,Client sample,15,3,2.4,Wareham
+2023 S WH P2 S2,Client sample,15,4,2.5,Wareham
+2023 S WH P2 S3,Client sample,18,4,2.81,Wareham
+2023 S WH P2 S4,Client sample,24,5,3.8,Wareham
+2023 S WH P2 S5,Client sample,13,1,2.1,Wareham
+2023 S WH P3 S1,Client sample,14,4,2.26,Wareham
+2023 S WH P3 S2,Client sample,21,3,3.03,Wareham
+2023 S WH P3 S3,Client sample,27,5,4.06,Wareham
+2023 S WH P3 S4,Client sample,16,3,2.52,Wareham
+2023 S WH P3 S5,Client sample,5,1,0.58,Wareham
+2023 S WH P4 S1,Client sample,13,3,2.06,Wareham
+2023 S WH P4 S2,Client sample,19,6,2.89,Wareham
+2023 S WH P4 S3,Client sample,16,7,2.22,Wareham
+2023 S WH P4 S4,Client sample,12,4,1.61,Wareham
+2023 S WH P4 S5,Client sample,18,7,3.04,Wareham
+2023 S WH P5 S1,Client sample,20,6,3.06,Wareham
+2023 S WH P5 S2,Client sample,10,1,1.72,Wareham
+2023 S WH P5 S3,Client sample,24,7,3.35,Wareham
+2023 S WH P5 S5,Client sample,16,3,2.37,Wareham
+2023 S WH P6 S1,Client sample,26,7,3.5,Wareham
+2023 S WH P6 S2,Client sample,6,2,0.97,Wareham
+2023 S WH P6 S3,Client sample,18,5,2.73,Wareham
+2023 S WH P6 S4,Client sample,17,6,2.56,Wareham
+2023 S WH P6 S5,Client sample,20,8,3.25,Wareham
+2023 S WP P1 S1,Client sample,9,4,1.68,Wareham
+2023 S WP P1 S2,Client sample,4,1,0.72,Wareham
+2023 S WP P1 S3,Client sample,9,2,1.79,Wareham
+2023 S WP P1 S4,Client sample,23,7,3.35,Wareham
+2023 S WP P1 S5,Client sample,18,4,2.95,Wareham
+2023 S WP P2 S1,Client sample,7,4,1.38,Wareham
+2023 S WP P2 S3,Client sample,5,2,0.79,Wareham
+2023 S WP P2 S4,Client sample,10,1,1.62,Wareham
+2023 S WP P2 S5,Client sample,17,5,2.38,Wareham
+2023 S WP P3 S1,Client sample,18,4,2.73,Wareham
+2023 S WP P3 S2,Client sample,20,3,2.6,Wareham
+2023 S WP P3 S3,Client sample,11,4,1.76,Wareham
+2023 S WP P3 S4,Client sample,14,7,1.6,Wareham
+2023 S WP P3 S5,Client sample,26,3,3.42,Wareham
+2023 S WP P4 S1,Client sample,4,1,0.67,Wareham
+2023 S WP P4 S2,Client sample,19,9,3.04,Wareham
+2023 S WP P4 S3,Client sample,5,1,0.83,Wareham
+2023 S WP P4 S4,Client sample,5,1,0.97,Wareham
+2023 S WP P4 S5,Client sample,5,1,1.12,Wareham
+2023 S WP P5 S1,Client sample,21,6,3.39,Wareham
+2023 S WP P5 S2,Client sample,11,2,2.01,Wareham
+2023 S WP P5 S3,Client sample,22,6,3.63,Wareham
+2023 S WP P5 S4,Client sample,15,4,2.77,Wareham
+2023 S WP P5 S5,Client sample,14,3,2.2,Wareham
+2023 S WP P6 S1,Client sample,20,4,2.8,Wareham
+2023 S WP P6 S2,Client sample,2,1,0.47,Wareham
+2023 S WP P6 S3,Client sample,2,1,0.37,Wareham
+2023 S WP P6 S4,Client sample,10,0,1.9,Wareham
+2023 S WP P6 S5,Client sample,19,2,2.76,Wareham
+2023 S WP P7 S1,Client sample,8,2,1.17,Wareham
+2023 S WP P7 S2,Client sample,3,1,0.76,Wareham
+2023 S WP P7 S3,Client sample,8,2,1.53,Wareham
+2023 S WP P7 S4,Client sample,5,1,0.98,Wareham
+2023 S WP P7 S5,Client sample,12,4,1.98,Wareham
+2023 S WP P8 S1,Client sample,12,3,2.29,Wareham
+2023 S WP P8 S2,Client sample,16,7,2.54,Wareham
+2023 S WP P8 S3,Client sample,14,4,2.22,Wareham
+2023 S WP P8 S4,Client sample,12,3,2.03,Wareham
+2023 S WP P8 S5,Client sample,11,4,1.73,Wareham
+2023 S WP P9 S1,Client sample,12,3,2.14,Wareham
+2023 S WP P9 S2,Client sample,19,6,2.93,Wareham
+2023 S WP P9 S3,Client sample,23,6,3.94,Wareham
+2023 S WP P9 S4,Client sample,14,3,2.54,Wareham
+2023 S WP P9 S5,Client sample,9,2,1.49,Wareham
+2023 W BH1 P1 S1,Client sample,36,8,3.78,Neroche
+2023 W BH1 P1 S2,Client sample,33,8,4.86,Neroche
+2023 W BH1 P1 S3,Client sample,15,3,2.29,Neroche
+2023 W BH1 P1 S4,Client sample,12,5,2.13,Neroche
+2023 W BH1 P10 S1,Client sample,20,5,3.05,Neroche
+2023 W BH1 P10 S2,Client sample,24,6,3.68,Neroche
+2023 W BH1 P10 S3,Client sample,12,3,1.98,Neroche
+2023 W BH1 P10 S4,Client sample,18,3,2.84,Neroche
+2023 W BH1 P10 S5,Client sample,13,5,1.97,Neroche
+2023 W BH1 P2 S1,Client sample,13,5,2.07,Neroche
+2023 W BH1 P2 S2,Client sample,19,5,2.94,Neroche
+2023 W BH1 P2 S3,Client sample,14,6,1.99,Neroche
+2023 W BH1 P2 S4,Client sample,9,2,1.51,Neroche
+2023 W BH1 P2 S5,Client sample,8,3,1.23,Neroche
+2023 W BH1 P3 S1,Client sample,11,3,1.38,Neroche
+2023 W BH1 P3 S2,Client sample,21,4,2.61,Neroche
+2023 W BH1 P3 S3,Client sample,12,4,1.84,Neroche
+2023 W BH1 P3 S4,Client sample,10,1,1.92,Neroche
+2023 W BH1 P3 S5,Client sample,6,1,0.94,Neroche
+2023 W BH1 P4 S1,Client sample,11,3,1.69,Neroche
+2023 W BH1 P4 S2,Client sample,26,7,3.58,Neroche
+2023 W BH1 P4 S3,Client sample,9,1,1.64,Neroche
+2023 W BH1 P4 S4,Client sample,9,4,1.54,Neroche
+2023 W BH1 P4 S5,Client sample,6,3,0.97,Neroche
+2023 W BH1 P5 S1,Client sample,22,4,2.85,Neroche
+2023 W BH1 P5 S2,Client sample,8,4,1.32,Neroche
+2023 W BH1 P5 S3,Client sample,12,3,1.84,Neroche
+2023 W BH1 P5 S4,Client sample,8,2,1.27,Neroche
+2023 W BH1 P5 S5,Client sample,16,8,2.35,Neroche
+2023 W BH1 P6 S1,Client sample,13,4,1.9,Neroche
+2023 W BH1 P6 S2,Client sample,15,3,2.19,Neroche
+2023 W BH1 P6 S3,Client sample,10,3,1.72,Neroche
+2023 W BH1 P6 S4,Client sample,14,8,2.43,Neroche
+2023 W BH1 P6 S5,Client sample,20,3,3.17,Neroche
+2023 W BH1 P7 S1,Client sample,5,2,0.88,Neroche
+2023 W BH1 P7 S2,Client sample,8,3,1.54,Neroche
+2023 W BH1 P7 S3,Client sample,8,1,1.43,Neroche
+2023 W BH1 P7 S4,Client sample,19,5,3.07,Neroche
+2023 W BH1 P7 S5,Client sample,9,4,1.67,Neroche
+2023 W BH1 P8 S1,Client sample,11,2,1.76,Neroche
+2023 W BH1 P8 S2,Client sample,28,8,4.18,Neroche
+2023 W BH1 P8 S3,Client sample,19,5,2.5,Neroche
+2023 W BH1 P8 S4,Client sample,17,3,2.21,Neroche
+2023 W BH1 P8 S5,Client sample,17,1,2.35,Neroche
+2023 W BH1 P9 S1,Client sample,14,3,2.39,Neroche
+2023 W BH1 P9 S2,Client sample,10,3,1.56,Neroche
+2023 W BH1 P9 S3,Client sample,19,6,2.69,Neroche
+2023 W BH1 P9 S4,Client sample,9,3,1.44,Neroche
+2023 W BH1 P9 S5,Client sample,8,1,1.11,Neroche
+2023 W FD1 P1 S1,Client sample,10,4,1.54,Forest of Dean
+2023 W FD1 P1 S2,Client sample,13,2,2.15,Forest of Dean
+2023 W FD1 P1 S3,Client sample,22,7,3.24,Forest of Dean
+2023 W FD1 P1 S4,Client sample,24,10,3.45,Forest of Dean
+2023 W FD1 P1 S5,Client sample,21,7,2.81,Forest of Dean
+2023 W FD1 P2 S1,Client sample,15,3,2.45,Forest of Dean
+2023 W FD1 P2 S2,Client sample,11,2,1.76,Forest of Dean
+2023 W FD1 P2 S3,Client sample,8,1,1.49,Forest of Dean
+2023 W FD1 P2 S4,Client sample,22,6,3.34,Forest of Dean
+2023 W FD1 P2 S5,Client sample,14,2,2.15,Forest of Dean
+2023 W FD1 P3 S1,Client sample,23,7,3.45,Forest of Dean
+2023 W FD1 P3 S2,Client sample,16,4,2.11,Forest of Dean
+2023 W FD1 P3 S3,Client sample,17,5,2.8,Forest of Dean
+2023 W FD1 P3 S4,Client sample,15,5,2.32,Forest of Dean
+2023 W FD1 P3 S5,Client sample,14,6,2.09,Forest of Dean
+2023 W FD1 P4 S1,Client sample,4,1,0.85,Forest of Dean
+2023 W FD1 P4 S2,Client sample,17,3,2.41,Forest of Dean
+2023 W FD1 P4 S3,Client sample,25,3,3.88,Forest of Dean
+2023 W FD1 P4 S4,Client sample,26,10,2.95,Forest of Dean
+2023 W FD1 P4 S5,Client sample,12,2,1.94,Forest of Dean
+2023 W FD1 P5 S1,Client sample,14,3,2.38,Forest of Dean
+2023 W FD1 P5 S2,Client sample,19,3,2.55,Forest of Dean
+2023 W FD1 P5 S5,Client sample,10,3,1.47,Forest of Dean
+2023 W FD1 P6 S1,Client sample,22,3,3.5,Forest of Dean
+2023 W FD1 P6 S3,Client sample,18,6,2.94,Forest of Dean
+2023 W FD1 P6 S4,Client sample,21,5,2.68,Forest of Dean
+2023 W FD1 P6 S5,Client sample,18,4,2.85,Forest of Dean
+2023 Y K P1 S1,Client sample,13,0,2.13,Knapton
+2023 Y K P1 S2,Client sample,12,2,1.89,Knapton
+2023 Y K P1 S3,Client sample,13,1,1.98,Knapton
+2023 Y K P1 S4,Client sample,17,1,2.64,Knapton
+2023 Y K P1 S5,Client sample,9,1,1.3,Knapton
+2023 Y K P2 S1,Client sample,12,2,1.78,Knapton
+2023 Y K P2 S2,Client sample,23,2,3.11,Knapton
+2023 Y K P2 S3,Client sample,12,0,1.74,Knapton
+2023 Y K P2 S4,Client sample,13,0,2.15,Knapton
+2023 Y K P2 S5,Client sample,12,1,1.68,Knapton
+2023 Y K P3 S1,Client sample,9,2,1.47,Knapton
+2023 Y K P3 S2,Client sample,16,1,2.41,Knapton
+2023 Y K P3 S3,Client sample,9,0,1.36,Knapton
+2023 Y K P3 S4,Client sample,6,0,0.97,Knapton
+2023 Y K P3 S5,Client sample,16,0,2.23,Knapton
+2023 Y K P4 S1,Client sample,9,1,1.45,Knapton
+2023 Y K P4 S2,Client sample,15,1,2.1,Knapton
+2023 Y K P4 S3,Client sample,9,3,1.59,Knapton
+2023 Y K P4 S5,Client sample,12,0,1.82,Knapton
+2023 Y LE1 P1 S1,Client sample,7,2,0.96,Levisham
+2023 Y LE1 P1 S2,Client sample,7,2,1.08,Levisham
+2023 Y LE1 P1 S3,Client sample,16,6,1.99,Levisham
+2023 Y LE1 P1 S4,Client sample,5,2,0.64,Levisham
+2023 Y LE1 P1 S5,Client sample,9,3,1.21,Levisham
+2023 Y LE1 P2 S1,Client sample,3,2,0.67,Levisham
+2023 Y LE1 P2 S2,Client sample,17,6,2.25,Levisham
+2023 Y LE1 P2 S3,Client sample,12,4,1.62,Levisham
+2023 Y LE1 P2 S4,Client sample,9,4,1.42,Levisham
+2023 Y LE1 P2 S5,Client sample,20,5,3.33,Levisham
+2023 Y LE1 P3 S1,Client sample,9,5,1.19,Levisham
+2023 Y LE1 P3 S2,Client sample,18,6,2.03,Levisham
+2023 Y LE1 P3 S3,Client sample,9,3,1.54,Levisham
+2023 Y LE1 P3 S4,Client sample,2,0,0.08,Levisham
+2023 Y LE1 P3 S5,Client sample,7,2,1.14,Levisham
+2023 Y LE1 P4 S1,Client sample,18,8,2.48,Levisham
+2023 Y LE1 P4 S2,Client sample,5,2,0.76,Levisham
+2023 Y LE1 P4 S3,Client sample,5,2,0.52,Levisham
+2023 Y LE1 P4 S4,Client sample,6,3,0.93,Levisham
+2023 Y LE1 P4 S5,Client sample,12,7,1.84,Levisham
+2023 Y LE1 P5 S1,Client sample,5,2,0.82,Levisham
+2023 Y LE1 P5 S2,Client sample,7,3,1.07,Levisham
+2023 Y LE1 P5 S3,Client sample,8,5,1.05,Levisham
+2023 Y LE1 P5 S4,Client sample,6,2,1.01,Levisham
+2023 Y LE1 P5 S5,Client sample,9,6,1.31,Levisham
+2023 Y NE1 P1 S2,Client sample,14,3,2.06,Newtondale
+2023 Y NE1 P1 S3,Client sample,8,2,1.08,Newtondale
+2023 Y NE1 P1 S4,Client sample,15,5,2.32,Newtondale
+2023 Y NE1 P1 S5,Client sample,6,0,0.72,Newtondale
+2023 Y NE1 P10 S1,Client sample,14,3,2.25,Newtondale
+2023 Y NE1 P10 S4,Client sample,9,4,1.34,Newtondale
+2023 Y NE1 P2 S1,Client sample,14,1,2.21,Newtondale
+2023 Y NE1 P2 S2,Client sample,16,2,2.23,Newtondale
+2023 Y NE1 P2 S3,Client sample,15,2,1.97,Newtondale
+2023 Y NE1 P2 S4,Client sample,10,2,1.82,Newtondale
+2023 Y NE1 P2 S5,Client sample,20,2,3.18,Newtondale
+2023 Y NE1 P3 S1,Client sample,6,2,1.15,Newtondale
+2023 Y NE1 P3 S2,Client sample,7,4,1.25,Newtondale
+2023 Y NE1 P3 S3,Client sample,22,9,3.13,Newtondale
+2023 Y NE1 P3 S4,Client sample,12,5,1.82,Newtondale
+2023 Y NE1 P3 S5,Client sample,11,2,1.76,Newtondale
+2023 Y NE1 P4 S1,Client sample,15,4,2.29,Newtondale
+2023 Y NE1 P4 S3,Client sample,15,3,2.53,Newtondale
+2023 Y NE1 P4 S4 (1),Client sample,11,4,1.86,Newtondale
+2023 Y NE1 P4 S4 (2),Client sample,10,3,1.51,Newtondale
+2023 Y NE1 P4 S5,Client sample,18,8,3.05,Newtondale
+2023 Y NE1 P5 S1,Client sample,5,2,0.81,Newtondale
+2023 Y NE1 P5 S2,Client sample,3,1,0.49,Newtondale
+2023 Y NE1 P5 S3,Client sample,9,4,1.66,Newtondale
+2023 Y NE1 P5 S4,Client sample,8,2,1.48,Newtondale
+2023 Y NE1 P5 S5,Client sample,6,1,1.38,Newtondale
+2023 Y NE1 P6 S2,Client sample,13,5,2.31,Newtondale
+2023 Y NE1 P6 S3,Client sample,4,3,0.61,Newtondale
+2023 Y NE1 P6 S4,Client sample,12,5,2,Newtondale
+2023 Y NE1 P6 S5,Client sample,13,5,1.47,Newtondale
+2023 Y NE1 P7 S1,Client sample,11,0,1.65,Newtondale
+2023 Y NE1 P7 S2,Client sample,22,5,3.46,Newtondale
+2023 Y NE1 P7 S3,Client sample,21,8,3.18,Newtondale
+2023 Y NE1 P7 S4,Client sample,9,5,1.38,Newtondale
+2023 Y NE1 P7 S5 (1),Client sample,9,3,1.43,Newtondale
+2023 Y NE1 P7 S5 (2),Client sample,9,2,1.22,Newtondale
+2023 Y NE1 P8 S1,Client sample,8,3,1.35,Newtondale
+2023 Y NE1 P8 S2,Client sample,12,4,1.98,Newtondale
+2023 Y NE1 P8 S3 (1),Client sample,1,0,NA,Newtondale
+2023 Y NE1 P8 S3 (2),Client sample,10,2,1.84,Newtondale
+2023 Y NE1 P8 S5,Client sample,19,3,2.56,Newtondale
+2023 Y NE1 P9 S1,Client sample,12,4,1.77,Newtondale
+2023 Y NE1 P9 S2,Client sample,6,0,0.96,Newtondale
+2023 Y NE1 P9 S3,Client sample,11,5,1.97,Newtondale
+2023 Y NE1 P9 S4,Client sample,14,3,2.07,Newtondale
+2023 Y NE1 P9 S5,Client sample,15,1,2.1,Newtondale
+2023 Y WS1 P1 S1,Client sample,5,2,0.68,Wormsike
+2023 Y WS1 P1 S2,Client sample,5,2,0.72,Wormsike
+2023 Y WS1 P1 S3,Client sample,4,2,0.42,Wormsike
+2023 Y WS1 P1 S4,Client sample,12,5,2.04,Wormsike
+2023 Y WS1 P1 S5,Client sample,4,1,0.72,Wormsike
+2023 Y WS1 P2 S1,Client sample,5,2,0.75,Wormsike
+2023 Y WS1 P2 S2,Client sample,6,2,0.87,Wormsike
+2023 Y WS1 P2 S3,Client sample,4,1,0.58,Wormsike
+2023 Y WS1 P2 S4,Client sample,9,3,1.12,Wormsike
+2023 Y WS1 P2 S5,Client sample,10,3,1.09,Wormsike
+2023 Y WS1 P3 S1,Client sample,9,4,1.57,Wormsike
+2023 Y WS1 P3 S2,Client sample,6,3,0.93,Wormsike
+2023 Y WS1 P3 S3,Client sample,12,3,2.03,Wormsike
+2023 Y WS1 P3 S4,Client sample,8,4,0.88,Wormsike
+2023 Y WS1 P3 S5,Client sample,10,3,1.54,Wormsike
+2034 Y NE1 P10 S2,Client sample,2,0,0.27,Newtondale

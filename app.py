@@ -1,16 +1,6 @@
 import streamlit as st
 import pandas as pd
-from streamlit_option_menu import option_menu
-
-# Caching data loading for performance
-@st.cache_data
-def load_data():
-    return pd.read_parquet("data/processed/observations_clean.parquet")
-
-df = load_data()
-
-# Import page render functions
-from pages.home import render_home
+from src.db import init_db, get_conn
 
 st.set_page_config(
     page_title="Biodiversity Insights",
@@ -18,54 +8,84 @@ st.set_page_config(
     layout="wide",
 )
 
-# Sidebar navigation
-with st.sidebar:
-    selected = option_menu(
-        menu_title="Biodiversity Insights",
-        options=["Home", "Overview", "Data", "About"],
-        icons=["house", "bar-chart", "database", "info-circle"],
-        menu_icon="leaf",
-        default_index=0,
-    )
+# Cache database setup and data loading to speed up app performance
 
-# ----- PAGE ROUTING -----
-
-if selected == "Home":
-    render_home()
-
-elif selected == "Overview":
-    st.title("Overview")
-    st.write("Overview page placeholder")
-
-elif selected == "Data":
-    st.title("Data")
-
-    from src.db import init_db, load_csv_folder, get_conn
-
+@st.cache_resource
+def setup_database():
     init_db()
+    return True
 
-    col1, col2 = st.columns(2)
+@st.cache_data
+def load_observations():
+    with get_conn(read_only=True) as con:
+        return con.execute("SELECT * FROM observations").df()
 
-    with col1:
-        if st.button("Load / refresh CSVs into DuckDB"):
-            created = load_csv_folder("data")
-            st.success(f"Loaded {len(created)} tables")
-            st.write(created)
+# Initialise DB
+setup_database()
 
-    with col2:
-        with get_conn(read_only=True) as con:
-            tables = con.execute("SHOW TABLES").fetchall()
-        st.write("Tables in DB:")
-        st.write([t[0] for t in tables])
+# Load data
+try:
+    df = load_observations()
+except Exception:
+    df = pd.DataFrame()
 
-    table_names = [t[0] for t in tables]
-    if table_names:
-        chosen = st.selectbox("Preview table", table_names)
-        with get_conn(read_only=True) as con:
-            df_preview = con.execute(f"SELECT * FROM {chosen} LIMIT 50").df()
-        st.dataframe(df_preview, use_container_width=True)
+st.title("🌿 Biodiversity Insights Dashboard")
 
-elif selected == "About":
-    st.title("ℹ️ About")
-    st.write("About page placeholder")
+if df.empty:
+    st.warning("No observations table found. Run your data pipeline first.")
+    st.stop()
 
+# Filter by taxa group
+st.subheader("Filters")
+
+taxa_options = ["All"] + sorted(df["iconic_taxon_name"].dropna().unique().tolist())
+
+selected_taxa = st.selectbox(
+    "Filter by taxa group",
+    taxa_options
+)
+
+if selected_taxa != "All":
+    df = df[df["iconic_taxon_name"] == selected_taxa]
+
+# Summary Metrics
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.metric("Total Observations", f"{len(df):,}")
+
+with col2:
+    st.metric("Unique Species", df["scientific_name"].nunique())
+
+with col3:
+    st.metric("Taxa Groups", df["iconic_taxon_name"].nunique())
+
+# Data Preview
+
+st.subheader("Sample Data")
+st.dataframe(df.head(50), use_container_width=True)
+
+# Observation Map
+
+st.subheader("Observation Map")
+
+import pydeck as pdk
+
+st.pydeck_chart(pdk.Deck(
+    initial_view_state=pdk.ViewState(
+        latitude=df["latitude"].mean(),
+        longitude=df["longitude"].mean(),
+        zoom=10,
+        pitch=0,
+    ),
+    layers=[
+        pdk.Layer(
+            "ScatterplotLayer",
+            data=df,
+            get_position='[longitude, latitude]',
+            get_radius=50,
+            pickable=True,
+        )
+    ],
+))

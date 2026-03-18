@@ -8,12 +8,8 @@ def render_home():
         """
         This is the **home page** of the Biodiversity Insights dashboard.
 
-        If you can see this text:
-        - Streamlit is running correctly  
-        - The navigation menu is working  
-        - Page routing is set up properly  
-
-        You can now start building out the dashboard page by page. 
+        Use the sidebar to navigate through different sections of the dashboard.
+        
         """
     )
 

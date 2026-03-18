@@ -1,5 +1,13 @@
 import streamlit as st
+import pandas as pd
 from streamlit_option_menu import option_menu
+
+# Caching data loading for performance
+@st.cache_data
+def load_data():
+    return pd.read_parquet("data/processed/observations_clean.parquet")
+
+df = load_data()
 
 # Import page render functions
 from pages.home import render_home
@@ -26,7 +34,7 @@ if selected == "Home":
     render_home()
 
 elif selected == "Overview":
-    st.title("📊 Overview")
+    st.title("Overview")
     st.write("Overview page placeholder")
 
 elif selected == "Data":
@@ -60,3 +68,4 @@ elif selected == "Data":
 elif selected == "About":
     st.title("ℹ️ About")
     st.write("About page placeholder")
+

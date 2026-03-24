@@ -70,6 +70,7 @@ Where possible, this project:
 
 ## Project Structure
 
+```
 biodiversity_dashboard/
 │
 ├── app.py # Main Streamlit app
@@ -86,7 +87,7 @@ biodiversity_dashboard/
 │
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 

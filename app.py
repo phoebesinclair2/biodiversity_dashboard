@@ -64,7 +64,7 @@ with col3:
 # Data Preview
 
 st.subheader("Sample Data")
-st.dataframe(df.head(50), use_container_width=True)
+st.dataframe(df.head(50), width='stretch')
 
 # Observation Map
 

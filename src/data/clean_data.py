@@ -33,8 +33,5 @@ def clean_observations(df: pd.DataFrame) -> pd.DataFrame:
         "user_login",
     ]
     df = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
-
-    if "iconic_taxon_name" in df.columns:
-        df["color"] = df["iconic_taxon_name"].apply(assign_color)
-
+    
     return df

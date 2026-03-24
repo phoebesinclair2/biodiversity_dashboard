@@ -37,4 +37,20 @@ def clean_observations(df: pd.DataFrame) -> pd.DataFrame:
 
     df = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
 
+def assign_color(taxa):
+    if taxa == "Plants":
+        return [141, 211, 199] # Green
+    elif taxa == "Birds":
+        return [190, 186, 218] # Blue
+    elif taxa == "Insects":
+        return [255, 255, 179] # Light Yellow
+    elif taxa == "Mammals":
+        return [251, 128, 114] # Salmon
+    elif taxa == "Funghi":
+        return [128, 177, 211] # Lavender
+    else:
+        return [200, 200, 200]  # fallback
+
+df["color"] = df["taxa"].apply(assign_color)
+
     return df

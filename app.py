@@ -71,21 +71,39 @@ st.dataframe(df.head(50), width='stretch')
 st.subheader("Observation Map")
 
 import pydeck as pdk
+import streamlit as st
 
-st.pydeck_chart(pdk.Deck(
-    initial_view_state=pdk.ViewState(
-        latitude=df["latitude"].mean(),
-        longitude=df["longitude"].mean(),
-        zoom=10,
-        pitch=0,
-    ),
-    layers=[
-        pdk.Layer(
-            "ScatterplotLayer",
-            data=df,
-            get_position='[longitude, latitude]',
-            get_radius=50,
-            pickable=True,
-        )
-    ],
-))
+filtered_df = df.dropna(subset=["latitude", "longitude"])
+
+center_lat = filtered_df["latitude"].median()
+center_lon = filtered_df["longitude"].median()
+
+st.pydeck_chart(
+    pdk.Deck(
+        initial_view_state=pdk.ViewState(
+            latitude=center_lat,
+            longitude=center_lon,
+            zoom=12,
+            pitch=0,
+        ),
+        layers=[
+            pdk.Layer(
+                "ScatterplotLayer",
+                data=filtered_df,
+                get_position='[longitude, latitude]',
+                get_radius=3,
+                get_fill_color="color",
+                pickable=True,
+            )
+        ],
+        tooltip={"text": "Lat: {latitude}\nLon: {longitude}"}
+    )
+)
+
+st.markdown("""
+**Legend**  
+🟢 Plants  
+🔵 Birds  
+🟡 Insects  
+🔴 Mammals  
+""")

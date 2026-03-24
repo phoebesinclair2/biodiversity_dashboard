@@ -1,16 +1,5 @@
 import pandas as pd
 
-def assign_color(taxa):
-    color_map = {
-        "Plants": [141, 211, 199],
-        "Birds": [190, 186, 218],
-        "Insects": [255, 255, 179],
-        "Mammals": [251, 128, 114],
-        "Fungi": [128, 177, 211],
-    }
-    return color_map.get(taxa, [200, 200, 200])
-
-
 def clean_observations(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
@@ -40,10 +29,12 @@ def clean_observations(df: pd.DataFrame) -> pd.DataFrame:
         "positioning_method",
         "positioning_device",
         "species_guess",
+        "user_id",
+        "user_login",
     ]
     df = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
 
-    if "taxa" in df.columns:
-        df["color"] = df["taxa"].apply(assign_color)
+    if "iconic_taxon_name" in df.columns:
+        df["color"] = df["iconic_taxon_name"].apply(assign_color)
 
     return df

@@ -99,6 +99,23 @@ st.subheader("Observation Map")
 # Ensure valid coordinates before mapping
 map_df = df.dropna(subset=["latitude", "longitude"]).copy()
 
+# Format date
+if "observed_on" in map_df.columns:
+    map_df["observed_on_display"] = pd.to_datetime(
+        map_df["observed_on"], errors="coerce"
+    ).dt.strftime("%d %b %Y")
+
+# Format time (if available)
+if "time_observed_at" in map_df.columns:
+    map_df["time_observed_display"] = pd.to_datetime(
+        map_df["time_observed_at"], errors="coerce"
+    ).dt.strftime("%H:%M")
+
+# Clean username (fallback if missing)
+if "user_name" in map_df.columns:
+    map_df["user_display"] = map_df["user_name"].fillna("Unknown observer")
+
+
 if map_df.empty:
     st.warning("No valid coordinates available to display on the map.")
 else:
@@ -125,8 +142,14 @@ else:
                 )
             ],
             tooltip={
-                "text": "Taxa: {iconic_taxon_name}\nSpecies: {scientific_name}"
-            },
+                "text": (
+                    "Taxa: {iconic_taxon_name}\n"
+                    "Species: {scientific_name}\n"
+                    "Date: {observed_on_display}\n"
+                    "Time: {time_observed_display}\n"
+                    "Observer: {user_display}"
+                )
+            }
         )
     )
     st.markdown("### Map Legend")

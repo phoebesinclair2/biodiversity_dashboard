@@ -2,12 +2,14 @@ import streamlit as st
 import pandas as pd
 import pydeck as pdk
 from src.db import init_db, get_conn
+from src.styles.css import load_css
 
 st.set_page_config(
     page_title="Biodiversity Insights",
     page_icon="🌿",
     layout="wide",
 )
+st.markdown(load_css(), unsafe_allow_html=True)
 
 # Define map colours based on taxa group
 def get_color_map():
@@ -181,3 +183,156 @@ for col, taxa in zip(cols, present_taxa):
         """,
         unsafe_allow_html=True
     )
+# Yearly Metrics
+st.subheader("Yearly Metrics")
+
+# Ensure observed_on is datetime for yearly metrics
+df["observed_on"] = pd.to_datetime(df["observed_on"], errors="coerce")
+df["year"] = df["observed_on"].dt.year
+
+# Calculate species richness by year
+richness_by_year = (
+    df.groupby("year")["scientific_name"]
+    .nunique()
+    .reset_index(name="species_richness")
+)
+
+# Calculate observation counts by year
+counts_by_year = (
+    df.groupby("year")
+    .size()
+    .reset_index(name="observation_count")
+)
+
+yearly_metrics = pd.merge(richness_by_year, counts_by_year, on="year")
+
+yearly_metrics = yearly_metrics.sort_values("year")
+yearly_metrics
+
+import matplotlib.pyplot as plt
+
+# Ensure year is clean
+yearly_metrics["year"] = yearly_metrics["year"].astype(int)
+
+st.subheader("Yearly Metrics")
+
+col1, col2 = st.columns(2)
+
+# -------------------
+# Observation Count
+# -------------------
+with col1:
+    fig1, ax1 = plt.subplots(figsize=(6, 4))
+    
+    ax1.bar(yearly_metrics["year"], yearly_metrics["observation_count"])
+    ax1.set_title("Observation Count by Year")
+    ax1.set_xlabel("Year")
+    ax1.set_ylabel("Total Observations")
+    ax1.set_xticks(yearly_metrics["year"])
+    
+    plt.tight_layout()
+    st.pyplot(fig1)
+    st.caption(
+    "Observation count represents the total number of biodiversity records collected each year. "
+    "This metric reflects sampling effort, which can influence other measures such as species richness."
+)
+
+# -------------------
+# Species Richness
+# -------------------
+with col2:
+    fig2, ax2 = plt.subplots(figsize=(6, 4))
+    
+    ax2.bar(yearly_metrics["year"], yearly_metrics["species_richness"])
+    ax2.set_title("Species Richness by Year")
+    ax2.set_xlabel("Year")
+    ax2.set_ylabel("Unique Species")
+    ax2.set_xticks(yearly_metrics["year"])
+    
+    plt.tight_layout()
+    st.pyplot(fig2)
+    st.caption(
+    "Species richness is calculated as the number of unique species (based on scientific name) recorded each year. "
+    "It provides a measure of biodiversity, but should be interpreted alongside observation counts due to variation in sampling effort."
+)
+
+df["year"] = df["observed_on"].dt.year
+df["month"] = df["observed_on"].dt.month
+
+st.subheader("Advanced Biodiversity Metrics")
+
+st.markdown("#### Effort-normalised Richness")
+
+col1, col2 = st.columns([1, 1])
+
+with col1:
+    yearly_metrics["richness_per_100_obs"] = (
+        yearly_metrics["species_richness"] / yearly_metrics["observation_count"]
+    ) * 100
+
+    yearly_metrics["year"] = yearly_metrics["year"].astype(int)
+
+    fig, ax = plt.subplots(figsize=(6, 4))
+    ax.bar(yearly_metrics["year"], yearly_metrics["richness_per_100_obs"])
+    ax.set_title("Species Richness per 100 Observations")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Richness per 100 Observations")
+    ax.set_xticks(yearly_metrics["year"])
+    plt.tight_layout()
+    st.pyplot(fig)
+    st.caption(
+        "Effort-normalised richness shows the number of unique species recorded per 100 observations. "
+        "This metric helps account for differences in sampling effort, providing a more comparable measure of biodiversity across years."
+    )
+
+st.subheader("Seasonality")
+
+df["month"] = df["observed_on"].dt.month
+
+seasonality = (
+    df.groupby("month")["scientific_name"]
+    .nunique()
+    .reset_index(name="species_richness")
+)
+
+month_labels = {
+    1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr",
+    5: "May", 6: "Jun", 7: "Jul", 8: "Aug",
+    9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec"
+}
+seasonality["month_name"] = seasonality["month"].map(month_labels)
+
+fig, ax = plt.subplots(figsize=(8, 3))
+ax.bar(seasonality["month_name"], seasonality["species_richness"])
+ax.set_title("Species Richness by Month")
+ax.set_xlabel("Month")
+ax.set_ylabel("Unique Species")
+plt.tight_layout()
+
+st.pyplot(fig)
+st.caption(
+    "Seasonality illustrates how species richness varies throughout the year. "
+    "This helps identify periods of higher biodiversity, which may reflect ecological patterns such as breeding seasons or increased biological activity."
+)
+
+st.subheader("Taxa-specific Trends")
+
+taxa_trends = (
+    df.groupby(["year", "iconic_taxon_name"])["scientific_name"]
+    .nunique()
+    .reset_index(name="species_richness")
+)
+
+taxa_pivot = taxa_trends.pivot(
+    index="year",
+    columns="iconic_taxon_name",
+    values="species_richness"
+).fillna(0)
+
+taxa_pivot.index = taxa_pivot.index.astype(int)
+
+st.line_chart(taxa_pivot)
+st.caption(
+    "Taxa-specific trends show how species richness changes over time for different taxonomic groups. "
+    "This allows comparison of biodiversity patterns across groups, highlighting differences in ecological dynamics or observation behaviour."
+)

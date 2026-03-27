@@ -33,5 +33,19 @@ def clean_observations(df: pd.DataFrame) -> pd.DataFrame:
         "user_login",
     ]
     df = df.drop(columns=[col for col in cols_to_drop if col in df.columns])
-    
+
+    # Remove temporal outliers (e.g. observations with < 10 observations per year)
+    # Create year column
+    df["year"] = df["observed_on"].dt.year
+
+    # Count observations per year
+    year_counts = df["year"].value_counts()
+
+    # Define minimum threshold (e.g. at least 10 observations)
+    valid_years = year_counts[year_counts >= 10].index
+
+    # Filter dataset
+    df = df[df["year"].isin(valid_years)]
+
     return df
+

@@ -160,6 +160,7 @@ color_map = get_color_map()
 
 # Only show taxa that exist in current filtered data
 present_taxa = sorted(df["iconic_taxon_name"].dropna().unique())
+st.caption("Spatial distribution of observations across the study site.")
 
 cols = st.columns(len(present_taxa))
 
@@ -213,8 +214,6 @@ import matplotlib.pyplot as plt
 
 # Ensure year is clean
 yearly_metrics["year"] = yearly_metrics["year"].astype(int)
-
-st.subheader("Yearly Metrics")
 
 col1, col2 = st.columns(2)
 
@@ -314,9 +313,21 @@ st.caption(
     "Seasonality illustrates how species richness varies throughout the year. "
     "This helps identify periods of higher biodiversity, which may reflect ecological patterns such as breeding seasons or increased biological activity."
 )
+# -----------------------------------
+# Taxa-specific trends (interactive)
+# -----------------------------------
 
 st.subheader("Taxa-specific Trends")
 
+def normalise_color(rgb):
+    return [c / 255 for c in rgb]
+
+color_map = get_color_map()
+
+# Ensure year exists
+df["year"] = df["observed_on"].dt.year
+
+# Build dataset
 taxa_trends = (
     df.groupby(["year", "iconic_taxon_name"])["scientific_name"]
     .nunique()
@@ -331,8 +342,60 @@ taxa_pivot = taxa_trends.pivot(
 
 taxa_pivot.index = taxa_pivot.index.astype(int)
 
-st.line_chart(taxa_pivot)
-st.caption(
-    "Taxa-specific trends show how species richness changes over time for different taxonomic groups. "
-    "This allows comparison of biodiversity patterns across groups, highlighting differences in ecological dynamics or observation behaviour."
+# Order taxa by total richness
+taxa_order = taxa_pivot.sum().sort_values(ascending=False).index.tolist()
+
+# Sensible default selection
+default_taxa = [taxa for taxa in ["Plantae", "Insecta", "Aves", "Fungi"] if taxa in taxa_order]
+
+selected_taxa = st.multiselect(
+    "Choose taxa groups (Tip: deselect taxa groups to reduce visual clutter and focus on key trends.)",
+    options=taxa_order,
+    default=taxa_order
 )
+
+if selected_taxa:
+    plot_df = taxa_pivot[selected_taxa]
+
+    fig, ax = plt.subplots(figsize=(8, 3.5))
+
+    for col in plot_df.columns:
+        if col in color_map:
+            base_color = normalise_color(color_map[col])
+            color = [c * 0.8 for c in base_color]
+        else:
+            color = [0.4, 0.4, 0.4]
+
+        ax.plot(
+            plot_df.index,
+            plot_df[col],
+            marker="o",
+            markersize=5,
+            label=col,
+            color=color,
+            linewidth=2.5
+        )
+
+    ax.set_title("Species Richness by Taxa Group Over Time")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Unique Species")
+    ax.set_xticks(plot_df.index)
+    ax.grid(True, alpha=0.2)
+
+    ax.legend(
+        title="Taxa",
+        loc="upper center",
+        bbox_to_anchor=(0.5, -0.18),
+        ncol=4,
+        frameon=False
+    )
+
+    plt.tight_layout()
+    st.pyplot(fig)
+
+    st.caption(
+        "Taxa-specific trends show how species richness changes over time for selected taxonomic groups. "
+        "Use the filter above to compare biodiversity patterns across taxa."
+    )
+else:
+    st.info("Select at least one taxa group to display the chart.")

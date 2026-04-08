@@ -4,6 +4,13 @@ An interactive data dashboard for exploring biodiversity observations using data
 This project explores biodiversity trends using citizen science data, highlighting patterns in species richness and observation behaviour.
 This project is part of an MSc Data Science portfolio and demonstrates data ingestion, cleaning, storage, and visualisation using modern Python tools.
 
+## Prototype Notice
+
+This dashboard is a research prototype developed as part of an MSc Data Science project.  
+It is intended to demonstrate data integration, processing, and biodiversity visualisation techniques rather than function as a production monitoring system.
+
+The application uses a limited subset of publicly available biodiversity observations and should not be interpreted as a comprehensive biodiversity assessment.
+
 ## Features
 
 - Interactive dashboard built with Streamlit
@@ -29,6 +36,24 @@ This project uses publicly available biodiversity observation data from:
 iNaturalist - A global citizen science platform where users record and share biodiversity observations.
 
 More info: https://www.inaturalist.org
+
+## Study Area
+
+The current dataset focuses on biodiversity observations from the Kew Woods Forestry Commission site (Southport, UK).  
+The dataset contains approximately:
+
+- 867 observations
+- 331 unique species
+- 9 taxonomic groups
+- Observations spanning ~6 years
+
+This dataset was selected as a manageable case study for exploring biodiversity trends using citizen science data.
+
+## Data Limitations
+
+Citizen science datasets such as iNaturalist may contain spatial, temporal, and taxonomic biases due to uneven observation effort.  
+Results shown in this dashboard should therefore be interpreted as exploratory indicators rather than definitive measures of biodiversity.
+
 
 ## Data Licensing & Attribution
 
@@ -119,6 +144,7 @@ streamlit run app.py
 - Improve map clustering and styling  
 - Add filtering by taxa and geography  
 - Deploy to cloud (Streamlit Cloud / AWS)
+- - Implement biodiversity indicator normalisation techniques (e.g. baseline indexing)
 
 ## Contributing
 This is currently a personal/academic project, but suggestions and feedback are welcome.

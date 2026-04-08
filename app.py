@@ -4,6 +4,7 @@ import pydeck as pdk
 from src.db import init_db, get_conn
 from src.styles.css import load_css
 
+
 st.set_page_config(
     page_title="Biodiversity Insights",
     page_icon="🌿",
@@ -57,6 +58,22 @@ except Exception:
     df = pd.DataFrame()
 
 st.title("🌿 Biodiversity Insights Dashboard")
+
+st.warning(
+    """
+⚠️ **Prototype Dashboard – Research Project**
+
+This dashboard was developed as part of an MSc Data Science research project and is intended as a 
+demonstration of biodiversity data integration and visualisation techniques.
+
+The visualisations are based on publicly available **citizen science observations from iNaturalist**.  
+Such data may contain biases including uneven geographic coverage, taxonomic imbalance, and 
+opportunistic sampling behaviour.
+
+Observations should therefore **not be interpreted as a complete representation of biodiversity 
+or species abundance**, but as an exploratory dataset used to demonstrate analytical methods.
+"""
+)
 
 if df.empty:
     st.warning("No observations table found. Run your data pipeline first.")
@@ -217,9 +234,8 @@ yearly_metrics["year"] = yearly_metrics["year"].astype(int)
 
 col1, col2 = st.columns(2)
 
-# -------------------
 # Observation Count
-# -------------------
+
 with col1:
     fig1, ax1 = plt.subplots(figsize=(6, 4))
     
@@ -236,9 +252,8 @@ with col1:
     "This metric reflects sampling effort, which can influence other measures such as species richness."
 )
 
-# -------------------
 # Species Richness
-# -------------------
+
 with col2:
     fig2, ax2 = plt.subplots(figsize=(6, 4))
     
@@ -313,9 +328,7 @@ st.caption(
     "Seasonality illustrates how species richness varies throughout the year. "
     "This helps identify periods of higher biodiversity, which may reflect ecological patterns such as breeding seasons or increased biological activity."
 )
-# -----------------------------------
 # Taxa-specific trends (interactive)
-# -----------------------------------
 
 st.subheader("Taxa-specific Trends")
 

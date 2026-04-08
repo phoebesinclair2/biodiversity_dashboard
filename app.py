@@ -79,6 +79,18 @@ if df.empty:
     st.warning("No observations table found. Run your data pipeline first.")
     st.stop()
 
+# Dataset Summary 
+st.subheader("Dataset Summary")
+
+col1, col2, col3, col4 = st.columns(4)
+
+col1.metric("Observations", f"{len(df):,}")
+col2.metric("Species", f"{df['scientific_name'].nunique():,}" if "scientific_name" in df.columns else "N/A")
+col3.metric("Taxa Groups", f"{df['iconic_taxon_name'].nunique():,}" if "iconic_taxon_name" in df.columns else "N/A")
+col4.metric("Years Covered", f"{df['observed_on'].dt.year.nunique():,}" if "observed_on" in df.columns else "N/A")
+
+st.divider()
+
 # Filter by taxa group
 st.subheader("Filters")
 

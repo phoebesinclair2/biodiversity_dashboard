@@ -363,6 +363,9 @@ with col2:
 df["month"] = df["observed_on"].dt.month
 
 st.subheader("Advanced Biodiversity Metrics")
+st.caption(
+    "These indicators provide additional ecological insight beyond simple species counts."
+)
 st.markdown("#### Effort-normalised Richness")
 
 col1, col2 = st.columns([1, 1])

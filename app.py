@@ -308,6 +308,22 @@ yearly_metrics = pd.merge(richness_by_year, counts_by_year, on="year")
 yearly_metrics = yearly_metrics.sort_values("year")
 yearly_metrics["year"] = yearly_metrics["year"].astype(int)
 
+# Shannon Diversity Index by year
+
+def shannon_index(group):
+    proportions = group["scientific_name"].value_counts(normalize=True)
+    return -(proportions * np.log(proportions)).sum()
+
+import numpy as np
+
+shannon_by_year = (
+    df.groupby("year")
+    .apply(shannon_index)
+    .reset_index(name="shannon_diversity")
+)
+
+yearly_metrics = pd.merge(yearly_metrics, shannon_by_year, on="year")
+
 col1, col2 = st.columns(2)
 
 # Observation Count
@@ -369,6 +385,30 @@ with col1:
         "This metric helps account for differences in sampling effort, providing a more comparable measure of biodiversity across years."
     )
 
+with col2:
+    fig, ax = plt.subplots(figsize=(6, 4))
+
+    ax.plot(
+        yearly_metrics["year"],
+        yearly_metrics["shannon_diversity"],
+        marker="o",
+        linewidth=2
+    )
+
+    ax.set_title("Shannon Diversity Index by Year")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Shannon Diversity (H')")
+    ax.set_xticks(yearly_metrics["year"])
+
+    plt.tight_layout()
+    st.pyplot(fig)
+
+    st.caption(
+        "The Shannon Diversity Index measures biodiversity by combining species richness "
+        "and species evenness. Higher values indicate a more diverse ecological community "
+        "where species are more evenly distributed."
+    )
+
 st.subheader("Seasonality")
 
 seasonality = (
@@ -426,13 +466,13 @@ taxa_pivot = taxa_trends.pivot(
 
 taxa_pivot.index = taxa_pivot.index.astype(int)
 
-# Order taxa by total richness, using preferred order where possible
+# Order taxa by preferred display order where possible
 present_taxa = taxa_pivot.columns.tolist()
 ordered_taxa = [taxa for taxa in taxa_order if taxa in present_taxa]
 remaining_taxa = [taxa for taxa in present_taxa if taxa not in ordered_taxa]
 taxa_options_for_plot = ordered_taxa + sorted(remaining_taxa)
 
-# Sensible default selection
+# Default selection kept intentionally small to reduce visual clutter
 default_taxa = [
     taxa
     for taxa in ["Plants", "Insects", "Birds", "Fungi"]
@@ -440,9 +480,15 @@ default_taxa = [
 ]
 
 selected_taxa = st.multiselect(
-    "Choose taxa groups (Tip: deselect taxa groups to reduce visual clutter and focus on key trends.)",
+    "Choose taxa groups to display",
     options=taxa_options_for_plot,
     default=default_taxa if default_taxa else taxa_options_for_plot,
+)
+
+st.caption(
+    "The chart opens with a small default selection of taxa groups to reduce "
+    "visual clutter. Use the dropdown above to add or remove taxa and compare "
+    "trends across the full dataset."
 )
 
 if selected_taxa:
@@ -485,8 +531,8 @@ if selected_taxa:
     st.pyplot(fig)
 
     st.caption(
-        "Taxa-specific trends show how species richness changes over time for selected taxonomic groups. "
-        "Use the filter above to compare biodiversity patterns across taxa."
+        "Taxa-specific trends show how species richness changes over time for "
+        "selected taxonomic groups."
     )
 else:
     st.info("Select at least one taxa group to display the chart.")

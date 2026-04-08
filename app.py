@@ -12,6 +12,34 @@ st.set_page_config(
 )
 st.markdown(load_css(), unsafe_allow_html=True)
 
+# Taxa display labels and order for charts and legends
+taxa_labels = {
+    "Aves": "Birds",
+    "Mammalia": "Mammals",
+    "Reptilia": "Reptiles",
+    "Amphibia": "Amphibians",
+    "Insecta": "Insects",
+    "Arachnida": "Spiders",
+    "Mollusca": "Molluscs",
+    "Plantae": "Plants",
+    "Fungi": "Fungi",
+    "Actinopterygii": "Ray-finned Fishes",
+}
+
+taxa_order = [
+    "Birds",
+    "Mammals",
+    "Reptiles",
+    "Amphibians",
+    "Insects",
+    "Spiders",
+    "Molluscs",
+    "Ray-finned Fishes",
+    "Plants",
+    "Fungi",
+]
+
+
 # Define map colours based on taxa group
 def get_color_map():
     return {
@@ -93,16 +121,16 @@ st.divider()
 
 # Filter by taxa group
 st.subheader("Filters")
+taxa_options = sorted(df["iconic_taxon_name"].dropna().unique().tolist())
 
-taxa_options = ["All"] + sorted(df["iconic_taxon_name"].dropna().unique().tolist())
-
-selected_taxa = st.selectbox(
+selected_taxa = st.multiselect(
     "Filter by taxa group",
-    taxa_options
+    taxa_options,
+    default=taxa_options
 )
 
-if selected_taxa != "All":
-    df = df[df["iconic_taxon_name"] == selected_taxa].copy()
+if selected_taxa:
+    df = df[df["iconic_taxon_name"].isin(selected_taxa)].copy()
 
 # Rebuild colours after filtering
 if "iconic_taxon_name" in df.columns:

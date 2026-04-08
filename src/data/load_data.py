@@ -12,6 +12,18 @@ RAW_PATH = PROJECT_ROOT / "data" / "raw" / "observations.csv"
 PROCESSED_PATH = PROJECT_ROOT / "data" / "processed" / "observations_clean.parquet"
 DB_PATH = PROJECT_ROOT / "data" / "biodiversity.duckdb"
 
+taxa_labels = {
+    "Aves": "Birds",
+    "Mammalia": "Mammals",
+    "Reptilia": "Reptiles",
+    "Amphibia": "Amphibians",
+    "Insecta": "Insects",
+    "Arachnida": "Spiders",
+    "Mollusca": "Molluscs",
+    "Plantae": "Plants",
+    "Fungi": "Fungi",
+    "Actinopterygii": "Ray-finned Fishes",
+}
 
 def get_conn(reset: bool = False):
     if reset and DB_PATH.exists():
@@ -24,6 +36,13 @@ def get_conn(reset: bool = False):
 def run_pipeline():
     df = pd.read_csv(RAW_PATH)
     df_clean = clean_observations(df)
+
+    if "iconic_taxon_name" in df_clean.columns:
+        df_clean["taxa_common"] = (
+            df_clean["iconic_taxon_name"]
+            .map(taxa_labels)
+            .fillna(df_clean["iconic_taxon_name"])
+        )
 
     PROCESSED_PATH.parent.mkdir(parents=True, exist_ok=True)
     df_clean.to_parquet(PROCESSED_PATH, index=False)
